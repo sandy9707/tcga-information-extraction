@@ -14,10 +14,10 @@ shelf(obgetDEGs, cran_repo = "https://mirrors.tuna.tsinghua.edu.cn/CRAN/")
 
 # 设置输出目录
 output_dir <- "TCGA-BRCA/output"
-# shelfEnvironment(output_dir, path = root_dir)
+shelfEnvironment(output_dir, path = root_dir)
 
 # 设置输入目录
 imput_dir <- "/Users/sandy/Downloads/tcga/bcca/exp"
 
 # 载入 openxlsx、dplyr 和 jsonlite 包
-shelf(openxlsx, dplyr, jsonlite, cran_repo = "https://mirrors.tuna.tsinghua.edu.cn/CRAN/")
+shelf(openxlsx, dplyr, jsonlite, tidyr, cran_repo = "https://mirrors.tuna.tsinghua.edu.cn/CRAN/")

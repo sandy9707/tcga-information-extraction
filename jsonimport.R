@@ -4,7 +4,7 @@ source("/Users/sandy/Rstudio/TCGA-BRCA/code/prepare.R") # 准备配置
 # 读取 GDC 数据下载清单
 shelfEnvironment(imput_dir, path = "")
 manifest_matrix <- read.table("gdc_manifest_20230217_131521.txt",
-  sep = "\t", header = T, stringsAsFactors = F
+  sep = "\t", header = TURE, stringsAsFactors = FALSE
 )
 
 # 在查看器中查看清单
@@ -128,4 +128,4 @@ mRNA_exprSet <- mRNA_exprSet %>%
 
 # 写出表达矩阵_tpm
 shelfEnvironment(output_dir, path = root_dir)
-write.table(mRNA_exprSet, "expSet_COUNTS_ProCoding.txt", sep = "\t", row.names = F, col.names = T, quote = F)
+write.table(mRNA_exprSet, "expSet_COUNTS_ProCoding.txt", sep = "\t", row.names = FALSE, col.names = T, quote = FALSE)

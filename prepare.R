@@ -9,8 +9,8 @@ root_dir <- paste0("~", "/Rstudio")
 library(librarian)
 
 # 安装并载入 obgetDEGs 包
-# devtools::install_github('sandy9707/obgetDEGs')
-shelf(obgetDEGs, cran_repo = "https://mirrors.tuna.tsinghua.edu.cn/CRAN/")
+# //devtools::install_github('sandy9707/obgetDEGs')
+shelf(sandy9707 / obgetDEGs, cran_repo = "https://mirrors.tuna.tsinghua.edu.cn/CRAN/")
 
 # 设置输出目录
 output_dir <- "TCGA-BRCA/output"
@@ -20,4 +20,6 @@ shelfEnvironment(output_dir, path = root_dir)
 imput_dir <- "/Users/sandy/Downloads/tcga/bcca/exp"
 
 # 载入 openxlsx、dplyr 和 jsonlite 包
-shelf(openxlsx, dplyr, jsonlite, tidyr, cran_repo = "https://mirrors.tuna.tsinghua.edu.cn/CRAN/")
+shelf(openxlsx, dplyr, jsonlite, tidyr,
+    cran_repo = "https://mirrors.tuna.tsinghua.edu.cn/CRAN/"
+)

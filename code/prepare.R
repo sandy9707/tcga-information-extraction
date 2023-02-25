@@ -10,7 +10,9 @@ library(librarian)
 
 # 安装并载入 obgetDEGs 包
 # //devtools::install_github('sandy9707/obgetDEGs')
-shelf(sandy9707 / obgetDEGs, cran_repo = "https://mirrors.tuna.tsinghua.edu.cn/CRAN/")
+shelf(sandy9707 / obgetDEGs,
+    cran_repo = "https://mirrors.tuna.tsinghua.edu.cn/CRAN/"
+)
 
 # 设置输出目录
 output_dir <- "TCGA-BRCA/output"
